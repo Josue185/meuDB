@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $tarefas = $_POST['tarefas'];
     $print = $_POST['screenshot'];
     $hora = $_POST['horacaso'];
-    $time = $_POST['time'];
+    $tempoGasto = $_POST['time'];
 
     // Conexão com o MySQL
     $servername = "Local";
