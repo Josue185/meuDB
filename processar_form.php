@@ -12,12 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $tempoGasto = $_POST['tempoGasto'];
 
     // Conexão com o MySQL
-    $servername = "127.0.0.1";
+    $hostname = "localhost";
     $username = "root";
     $password = "04101991";
     $dbname = "controle";
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($hostname, $username, $password, $dbname);
 
     if ($conn->connect_error) {
         die("Erro na conexão com o MySQL: " . $conn->connect_error);
