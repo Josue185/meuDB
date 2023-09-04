@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $tempoGasto = $_POST['time'];
 
     // Conexão com o MySQL
-    $servername = "Local";
+    $servername = "localhost";
     $username = "root";
     $password = "04101991";
     $dbname = "controle";
